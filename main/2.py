@@ -15,8 +15,8 @@ for x in range(0,2): #перебор значений для x
 				|0|0|0|1|0|
 				|1|0|0|1|0|
 				'¯¯¯¯¯¯¯¯¯'
-					≡ - a == b          | x ≡ y                           | if (x == y):
-					∨ - a or b         | (x ≡ y)∨ z                      | if ((x == y) or z):
+					≡ - a == b         | x ≡ y                          | if (x == y):
+					∨ - a or b         | (x ≡ y)∨ z                     | if ((x == y) or z):
 					∧ - a and b        | ((x ≡ y)∨ z) ∧ (x ∨ z)         | if (((x == y) or z) and (x or z)):
 					→ - not(a) or b    | ((x ≡ y)∨ z) ∧ (x ∨ z) → w     | if (((x == y) or z) and not(x or z) or w):
 					¬ - not(a)         | ((¬x ≡ y)∨ z) ∧ (¬x ∨ z) → ¬w  | if (((not(x) == y) or z) and not(not(x) or z) or not(w)):

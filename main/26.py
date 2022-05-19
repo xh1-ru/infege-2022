@@ -17,6 +17,7 @@
 
 очень мерзкое задание но его можно легко зазубрить
 """
+
 file = open('zadanie_26.txt')
 data = file.readlines() # массив строк , readlines
 

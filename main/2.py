@@ -21,7 +21,7 @@ for x in range(0,2): #перебор значений для x
 					∨ - a or b         | (x ≡ y)∨ z                     | if ((x == y) or z):
 					∧ - a and b        | ((x ≡ y)∨ z) ∧ (x ∨ z)         | if (((x == y) or z) and (x or z)):
 					→ - a <= b    | ((x ≡ y)∨ z) ∧ (x ∨ z) → w     | if (((x == y) or z) and (x or z) <= w):
-					¬ - not(a)         | ((¬x ≡ y)∨ z) ∧ (¬x ∨ z) → ¬w  | if (((not(x) == y) or z) and not(not(x) or z) or not(w)):
+					¬ - not(a)         | ((¬x ≡ y)∨ z) ∧ (¬x ∨ z) → ¬w  | if (((not(x) == y) or z) and (not(x) or z) <= not(w)):
 				"""
 				#      (x ≡ z ) ∨ (x → (y ∧ z)) v w. {условие}
 				if not((x == z) or (x <=(y and z)) or w):

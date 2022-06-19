@@ -24,7 +24,7 @@ for x in range(0,2): #перебор значений для x
 					¬ - not(a)         | ((¬x ≡ y)∨ z) ∧ (¬x ∨ z) → ¬w  | if (((not(x) == y) or z) and not(not(x) or z) or not(w)):
 				"""
 				#      (x ≡ z ) ∨ (x → (y ∧ z)) v w. {условие}
-				if not((x == z) or (not(x) or (y and z)) or w):
+				if not((x == z) or (x <=(y and z)) or w):
 					print(x,y,z,w,0)
 					#ОТВЕТ: yzwx
 
